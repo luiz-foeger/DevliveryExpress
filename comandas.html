@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>DEVLIVERY - Produtos</title>
+    <link rel="stylesheet" href="style/style-header.css">
+    <link rel="stylesheet" href="style/style-comanda.css">
+    <!-- <link rel="stylesheet" href="style/style-tarefas.css"> -->
+
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html"><img src="img/logotipo.png" alt="Logotipo Devlivery"></a>
+        <nav class="itensHeader">
+            <ul>
+                <li><a href="cardapio.html"><strong>CARDÁPIO</strong></a></li>
+                <li><a href="comandas.html"><strong>PEDIDOS</strong></a></li>
+                <li><a href="tarefas.html"><strong>TAREFAS</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="h1">COMANDAS</h1>
+    <main>
+        <div class="conteudo">
+            <div class="container">
+                <div class="exposicao">
+                    <input type="text" id="inptComanda" placeholder="Digite uma nova comanda" maxlength="28">
+                    <button id="btnComanda">Criar Comanda</button>
+                    <ul id="listaComanda">
+                        <!-- <li>Tarefa Exemplo<button class="delete">Excluir <span class="iconify" data-icon="mdi:delete"></iconify></span></button></li> -->
+                    </ul>
+                </div>
+            </div>
+            <!-- <ul id="listaTarefa">
+                <li>Tarefa Exemplo<button class="delete">Excluir <span class="iconify" data-icon="mdi:delete">
+                            </iconify></span></button></li>
+            </ul> -->
+            <!--
+            <div class="mesa">
+                <h1>Comandas Lançadas</h1>
+                <ul>
+                    <li>Bruschetta: <span class="porcoes"> 2 porções</span></li>
+                    <li>Spaghetti: <span class="porcoes"> 3 porções</span></li>
+                    <li>Refrigerante: <span class="porcoes"> 4 porções</span></li>
+                    <li>Sobremesa: <span class="porcoes"> 2 porções</span></li>
+
+                </ul>
+                <a href="#">ver comandas por mesas ></a>
+            </div>  
+
+            <div class="mesa">
+                <h1>Comandas Canceladas</h1>
+                <ul>
+                    <li>Bruschetta: <span class="porcoes"> 2 porções</span></li>
+                    <li>Spaghetti: <span class="porcoes"> 3 porções</span></li>
+                    <li>Refrigerante: <span class="porcoes"> 4 porções</span></li>
+                    <li>Sobremesa: <span class="porcoes"> 2 porções</span></li>
+
+                </ul>
+                <a href="#">ver comandas ></a>
+            </div>  
+            -->
+        </div>
+    </main>
+
+    <!-- <script>
+
+        const paragrafo = document.querySelector('p');
+        paragrafo.addEventListener('click', atualizaNome);
+
+        function atualizaNome() {
+            const name = prompt('Digite o nome do Cliente:');
+
+            //paragrafo.innerHTML = '<a href=#>Link</a>';
+            paragrafo.textContent = `Comanda: ${name}`;
+        }
+
+        const span = document.querySelector('span')
+        span.addEventListener('click', criarComanda)
+        function criarComanda() {
+            const name = prompt('Digite o nome do Cliente:');
+
+            const comanda = document.createElement('p');
+            const texto = document.createTextNode(`Comanda: ${name}`)
+            comanda.appendChild(texto)
+            comanda.classList.add("comandas");
+
+            document.querySelector('div.conteudo').appendChild(comanda);
+
+        }
+
+    </script> -->
+    <script src="js/script-comanda.js"></script>
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+</body>
+
+</html>
