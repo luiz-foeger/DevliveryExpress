@@ -35,6 +35,7 @@
     color: #03203a;
     border: 7px solid #00c0b1;
     text-decoration: none;
+    transition: ease 0.1s;
 }
 
 .itensHeader ul li a:hover {
@@ -43,3 +44,10 @@
     background-color: #03203a;
     border-radius: 5px;
 }
+/* 
+.itemSelected {
+    color: #fff;
+    border: 7px solid #03203a;
+    background-color: #03203a;
+    border-radius: 5px;
+} */
